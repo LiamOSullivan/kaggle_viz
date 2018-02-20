@@ -32,7 +32,7 @@
       "sqlType" : "sqlTypeOther", 
       "length" : 12500, 
       "domain" : null, 
-      "defaultValue" : null
+      "defaultValue" : null 
     }, 
     {
       "name" : "DecisionDate", 
