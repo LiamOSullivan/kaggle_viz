@@ -1,0 +1,313 @@
+{
+  "objectIdFieldName" : "OBJECTID", 
+  "globalIdFieldName" : "", 
+  "geometryType" : "esriGeometryPoint", 
+  "spatialReference" : {
+    "wkid" : 4326, 
+    "latestWkid" : 4326
+  }, 
+  "fields" : [
+    {
+      "name" : "PlanningAuthority", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Planning Authority", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ReceivedDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "Received Date", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Decision", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Decision", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 12500, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "DecisionDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "Decision Date", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "features" : 
+  [
+ 
+  {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357171200000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1361923200000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4797746465297053, 
+        "y" : 51.89317194427818
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357257600000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1362009600000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4501452320095467, 
+        "y" : 51.885063132060509
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357516800000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1362009600000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4924898734355647, 
+        "y" : 51.879038415083052
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357689600000, 
+        "Decision" : "N/A", 
+        "DecisionDate" : null
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4835183118399886, 
+        "y" : 51.893475194450012
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357862400000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1362614400000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4712153974797477, 
+        "y" : 51.913552364803678
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1357862400000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1366675200000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4814996896778982, 
+        "y" : 51.889500409325635
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1325548800000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1330300800000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.5086944281937118, 
+        "y" : 51.902591520495832
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1325808000000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1330473600000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.5226545619828329, 
+        "y" : 51.888563035059754
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1488153600000, 
+        "Decision" : "N/A", 
+        "DecisionDate" : null
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4945609470058923, 
+        "y" : 51.91380871951381
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326067200000, 
+        "Decision" : "N/A", 
+        "DecisionDate" : null
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4387007295146983, 
+        "y" : 51.911730520890423
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326240000000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1330992000000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.443849487339282, 
+        "y" : 51.885544130181017
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326326400000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1339027200000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4422428781739765, 
+        "y" : 51.908735065020551
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326326400000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1331078400000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4547158010090584, 
+        "y" : 51.908989279621387
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326844800000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1331596800000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.5062366346520157, 
+        "y" : 51.902512426072448
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326844800000, 
+        "Decision" : "N/A", 
+        "DecisionDate" : null
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.42303321240976, 
+        "y" : 51.904388376443777
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326931200000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1331164800000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4719774994287835, 
+        "y" : 51.8801417267222
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1326931200000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1331596800000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.49969483070436, 
+        "y" : 51.897827797204961
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1327276800000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1331769600000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4901890036835663, 
+        "y" : 51.905339615195587
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1485302400000, 
+        "Decision" : "UNCONDITIONAL", 
+        "DecisionDate" : 1489622400000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.48632558308379, 
+        "y" : 51.900689276057783
+      }
+    }, 
+    {
+      "attributes" : {
+        "PlanningAuthority" : "Cork City Council", 
+        "ReceivedDate" : 1327449600000, 
+        "Decision" : "CONDITIONAL", 
+        "DecisionDate" : 1332201600000
+      }, 
+      "geometry" : 
+      {
+        "x" : -8.4461953105675338, 
+        "y" : 51.907248586913155
+      }
+    }
+  ]
+, 
+  "exceededTransferLimit" : true
+}
