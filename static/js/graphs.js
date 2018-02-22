@@ -65,7 +65,7 @@ function loadJsonFile(JSONsrc_, fileOffset_, fileCount_) { //, clusterName_, map
 //                    console.log(".done() - jsonData has length " + jsonFeaturesArr.length);
 //                    console.log("JSON Data Array " + JSON.stringify(jsonFeaturesArr));
 
-        console.log("Features length: " + jsonFeaturesArr.length); //features from one loadJSONFile call, multiple files
+//        console.log("Features length: " + jsonFeaturesArr.length); //features from one loadJSONFile call, multiple files
 //                    console.log("Features loaded: "+JSON.stringify(jsonFeaturesArr));
 
         makeGraphs(null, jsonFeaturesArr);
@@ -187,13 +187,10 @@ function makeGraphs(error, recordsJson) {
 //                            });
 //                            map.addLayer(breweryMarkers);
 
-
-//    drawMap(records);
     makeMap();
     dcCharts = [timeChart, decisionChart];
-////                , genderChart, ageSegmentChart, phoneBrandChart, locationChart];
-////
-//Update the heatmap if any dc chart get filtered
+
+//Update the map if any dc chart get filtered
     _.each(dcCharts, function (dcChart) {
         dcChart.on("filtered", function (chart, filter) {
 //            map.eachLayer(function (layer) {
@@ -201,7 +198,6 @@ function makeGraphs(error, recordsJson) {
 //            });
 
             makeMap();
-
             console.log("chart filtered");
         });
     });
@@ -212,14 +208,12 @@ function makeGraphs(error, recordsJson) {
 
 function makeMap() {
 
-
-
 //    var markers= [];
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    
-    //    var cityClusters = L.markerClusterGroup();
+
+    var cityClusters = L.markerClusterGroup();
     var streetMap = L.tileLayer(map_url,
             {
                 id: 'mapbox.streets',
@@ -231,14 +225,16 @@ function makeMap() {
     var baseMaps = {
         "Streets": streetMap
     }, planningMaps;
-    
+
     _.each(allDim.top(Infinity), function (d) {
+        cityClusters.addLayer(new L.Marker(new L.LatLng(d.geometry.coordinates[1], d.geometry.coordinates[0])));
 //       markers.push([d.geometry.coordinates[0], d.geometry.coordinates[1], "test"]);
-        map.addLayer(new L.Marker(new L.LatLng(d.geometry.coordinates[1], d.geometry.coordinates[0]), "test"));
+//        map.addLayer(new L.Marker(new L.LatLng(d.geometry.coordinates[1], d.geometry.coordinates[0]), "test"));
 //        console.log("d.geo:"+JSON.stringify(allDim));
 //console.log("d:"+JSON.stringify(d.geometry.coordinates[0]));
 
     });
+    map.addLayer(cityClusters);
 
 
 
