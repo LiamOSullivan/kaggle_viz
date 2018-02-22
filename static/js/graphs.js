@@ -206,14 +206,7 @@ function makeGraphs(error, recordsJson) {
 }
 ;
 
-function makeMap() {
-
-//    var markers= [];
-    map.eachLayer(function (layer) {
-        map.removeLayer(layer);
-    });
-
-    var cityClusters = L.markerClusterGroup();
+ var cityClusters = L.markerClusterGroup();
     var streetMap = L.tileLayer(map_url,
             {
                 id: 'mapbox.streets',
@@ -222,9 +215,21 @@ function makeMap() {
                 minZoom: min_zoom
             }).addTo(map);
 
-    var baseMaps = {
-        "Streets": streetMap
-    }, planningMaps;
+
+function makeMap() {
+
+//    var markers= [];
+//    map.eachLayer(function (layer) {
+//        map.removeLayer(layer);
+//    });
+cityClusters.clearLayers();
+      map.removeLayer(cityClusters);
+
+   
+
+//    var baseMaps = {
+//        "Streets": streetMap
+//    }, planningMaps;
 
     _.each(allDim.top(Infinity), function (d) {
         cityClusters.addLayer(new L.Marker(new L.LatLng(d.geometry.coordinates[1], d.geometry.coordinates[0])));
@@ -235,8 +240,6 @@ function makeMap() {
 
     });
     map.addLayer(cityClusters);
-
-
 
     //console.log("Make Map:"+JSON.stringify(geoData[0]));
 
